@@ -10,5 +10,5 @@ docker run --rm -it -v /home/monk/Docker/dockero-infosec/subfinder/output.xml:/t
 `pwd`:/tmp/results aquatone -scan-timeout 50000 -http-timeout 6000 -threads 20 -ports small
 
 ## Get rights to Screenshots ##
-sudo chown -R screenshots
+sudo chown -R /home/user/aquatone/screenshots
 
