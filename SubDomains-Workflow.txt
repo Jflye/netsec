@@ -1,7 +1,8 @@
 ## subfinder ##
+```
 docker run --rm -it -v $HOME/.config/subfinder:/root/.config/subfinder subfinder -d example.com \
 --timeout 15 -t 10 -nW -r 8.8.8.8,1.1.1.1 > finds.txt
-
+```
 ## Nmap ##
 nmap -Pn -sV -n -iL finds.txt -oX output.xml
 
