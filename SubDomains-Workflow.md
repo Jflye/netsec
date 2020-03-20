@@ -1,9 +1,11 @@
 ## subfinder ##
+```
 docker run --rm -it -v $HOME/.config/subfinder:/root/.config/subfinder subfinder -d example.com \
 --timeout 15 -t 10 -nW -r 8.8.8.8,1.1.1.1 > finds.txt
 
 ## Nmap ##
-nmap -Pn -sV -n -iL finds.txt -oX output.xml
+nmap -T5 -R --dns-servers 8.8.8.8,1.1.1.1 -Pn -sV -n -iL finds.txt \
+-oX forescout-nmap2.xml
 
 ## Aquatone ##
 docker run --rm -it -v /home/monk/Docker/dockero-infosec/subfinder/output.xml:/tmp/targets -v \
