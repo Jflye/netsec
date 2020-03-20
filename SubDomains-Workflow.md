@@ -16,5 +16,5 @@ docker run --rm -it -v /home/monk/Docker/dockero-infosec/subfinder/output.xml:/t
 ```
 ## Get rights to Screenshots ##
 ```
-sudo chown -R /home/user/aquatone/screenshots
+sudo chown -R user:user /home/user/aquatone/screenshots
 
