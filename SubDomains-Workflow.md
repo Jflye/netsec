@@ -7,7 +7,7 @@ docker run --rm -it -v $HOME/.config/subfinder:/root/.config/subfinder subfinder
 ## Nmap ##
 ```
 nmap -T5 -R --dns-servers 8.8.8.8,1.1.1.1 -Pn -sV -n -iL finds.txt \
--oX forescout-nmap2.xml
+-oX output.xml
 ```
 ## Aquatone ##
 ```
