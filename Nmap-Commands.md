@@ -28,12 +28,12 @@ nmap -A -iL /tmp/scanlist.txt
 Find out if a Host/Network is protected by a firewall:
 ```
 nmap -sA 192.168.1.254
-nmap -sA server1.neoslab.com
+nmap -sA example.com
 ```
 Scan a host when protected by a firewall:
 ```
 nmap -PN 192.168.1.1
-nmap -PN server1.neoslab.com
+nmap -PN example.com
 ```
 Scan IPV6: 
 - ("-6" enables IPv6 scanning.)
@@ -70,7 +70,7 @@ nmap -p 80,443 192.168.1.1
 nmap -p 80-200 192.168.1.1
 # Combine all options
 nmap -p U:53,111,137,T:21-25,80,139,8080 192.168.1.1
-nmap -p U:53,111,137,T:21-25,80,139,8080 server1.neoslab.com
+nmap -p U:53,111,137,T:21-25,80,139,8080 example.com
 nmap -v -sU -sT -p U:53,111,137,T:21-25,80,139,8080 192.168.1.254
 # Scan all ports with * wildcard
 nmap -p "*" 192.168.1.1
