@@ -4,7 +4,16 @@ docker run --rm -it -v $HOME/.config/subfinder:/root/.config/subfinder subfinder
 --timeout 15 -t 10 -nW -r 8.8.8.8,1.1.1.1 > finds.txt
 ```
 
-## Nmap ##
+## Check lines of subdomains ## 
+```
+wc -l finds.txt
+```
+## Delete excessive lines in finds.txt
+```
+nano finds.txt --> delete the top row...
+```
+
+## Nmap (Optional) ##
 ```
 nmap -T5 -R --dns-servers 8.8.8.8,1.1.1.1 -Pn -sV -n -iL finds.txt \
 -oX output.xml
@@ -17,4 +26,6 @@ sudo docker run --rm -it -v /home/USER/FOLDER/TARGET.txt:/tmp/targets -v  \
 ## Get rights to Screenshots ##
 ```
 sudo chown -R user:user /home/user/aquatone/screenshots
+
+
 
