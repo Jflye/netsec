@@ -113,7 +113,7 @@ Scan for IP Protocol:
 ```
 nmap -sO 192.168.1.1
 ```
-Save sacn results to output file:
+Save scan results to output file:
 ```
 nmap 192.168.1.1 > output.txt
 nmap -oN /path/to/filename 192.168.1.1
